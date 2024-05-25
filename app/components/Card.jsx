@@ -1,17 +1,24 @@
 import React from 'react'
-import { inter } from "../fonts";
+import { roboto } from "../fonts";
+import Link from 'next/link'
 
-const Card = ({ src }) => {
+const Card = ({ src, name, party, description, candidateId }) => {
   return (
-    <div className='flex flex-col items-center justify-center w-1/2 bg-grey-600 py-5 px-5 rounded-[20px] mx-4
-    border-solid border border-grey-700'>
-        <img
-        alt='Img of Biden'
-        src={src}
-        style={{width: '100%'}}
-        />
-        <p className={`text-2xl my-5 font-extrabold text-orange ${inter.className}`}>Donald Trump</p>
-    </div>
+    <Link href={`/candidate/${candidateId}`} className="w-1/2 m-4">
+        <div className='group flex flex-col items-center h-full w-full bg-grey-600 hover:bg-orange-500
+        py-5 px-5 rounded-[20px]
+        border-solid border border-grey-700 cursor-pointer'>
+            <img
+            alt='Img of Biden'
+            src={src}
+            style={{width: '100%'}}
+            />
+            <p className={`text-2xl mt-5 font-extrabold text-orange group-hover:text-white`}>{name}</p>
+            <p className={`text-sm group-hover:text-white`}>{party}</p>
+            <div className='w-1/2 border-solid border-t border-orange-500 my-3 group-hover:border-white'></div>
+            <p className='text-center group-hover:text-white'>{description}</p>
+        </div>
+    </Link>
   )
 }
 

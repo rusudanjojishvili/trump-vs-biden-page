@@ -6,7 +6,7 @@ import styles from './Header.module.css'
 const Header = () => {
   return (
     <header className='bg-white text-white border-solid border-b border-grey-500'>
-    <div className={styles.Headercontainer}>
+    <div className='flex items-center py-[30px] px-[130px]'>
       <div className={styles.logo}>
         <Image width={191} height={39} alt='logo' src='/logo.png'/>
       </div>

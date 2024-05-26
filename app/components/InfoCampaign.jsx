@@ -16,7 +16,7 @@ const InfoCampaign = ({ name, party, about, campainList }) => {
             <p>{about}</p>
         </div>
     </div>
-    <div className='flex-none w-50'>
+    <div className='flex-none w-50 '>
         <div className="py-10">
             <h1 className="text-2xl font-bold">Campaign positions</h1>
             {campainList.map((position,i) => (

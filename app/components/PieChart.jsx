@@ -4,9 +4,9 @@ import { Chart } from 'chart.js/auto'
 
 const PieChart = ({ positivePosts, negativePosts } ) => {
     const chartRef = useRef(null)
-    // const total = positivePosts.totalResults + negativePosts.totalResults
-    // const positivePct = positivePosts.totalResults/total * 100
-    // const negativePct = negativePosts.totalResults/total * 100
+    const total = positivePosts.totalResults + negativePosts.totalResults
+    const positivePct = positivePosts.totalResults/total * 100
+    const negativePct = negativePosts.totalResults/total * 100
 
     // console.log(positivePct, 'positivePct')
     useEffect(() => {
@@ -23,7 +23,7 @@ const PieChart = ({ positivePosts, negativePosts } ) => {
                 datasets: [
                     {
                         label: 'info',
-                        data: [65, 35],
+                        data: [positivePct, negativePct],
                         backgroundColor: [
                             'rgb(65 215 125)',
                             'rgb(238 76 76)'

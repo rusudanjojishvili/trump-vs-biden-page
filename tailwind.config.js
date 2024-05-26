@@ -23,7 +23,8 @@ module.exports = {
       'grey': {
         500: '#e7e3e3',
         600: '#EFEFEF',
-        700: '#27334026'
+        700: '#27334026',
+        800: '#F8F8F8'
       }
     },
     textColor: {
@@ -31,17 +32,7 @@ module.exports = {
       'orange': '#FC9F00',
       'white': '#ffffff'
     },
-    fontSize: {
-      sm: '0.875rem',
-      base: '1rem',
-      xl: '1.25rem',
-      '2xl': '1.5rem',
-      '3xl': '1.875rem',
-      '4xl': '2.441rem',
-      '5xl': '3.052rem',
-      '6xl': '3.7rem',
-      '7xl': '4rem',
-    },
+   
   },
   plugins: [],
 };

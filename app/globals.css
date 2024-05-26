@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  color: #273340;
+}
 .text1{
   font-family: var(--font-passion-one);
 }

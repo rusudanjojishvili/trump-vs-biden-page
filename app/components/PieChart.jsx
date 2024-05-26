@@ -37,7 +37,7 @@ const PieChart = ({ positivePosts, negativePosts } ) => {
     }, [])
     
   return (
-    <div style={{position: 'relative', width: '272px', height:"312px"}}>
+    <div >
       <canvas ref={chartRef} />
     </div>
   )

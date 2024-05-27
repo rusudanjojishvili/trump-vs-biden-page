@@ -24,6 +24,15 @@ The page shows the list positive and negative articles about each candidate. Als
 - **Navigation**: Use the navigation menu to switch between different sections.
 - **Interactive Charts:** Hover over the charts and graphs to get detailed information about the data points.
 
+### Why Tailwind CSS?
+
+This project uses [Tailwind CSS](https://tailwindcss.com/) for the following reasons:
+
+- **Utility-First Approach**: Tailwind's utility-first approach allows for rapid development by providing low-level utility classes that can be composed to build any design directly in your markup.
+- **Customization**: Tailwind is highly customizable, allowing you to create a unique design system without writing a single line of custom CSS. You can extend or configure the default theme to meet the specific needs of your project.
+- **Responsive Design**: Tailwind makes it easy to create responsive designs with its built-in responsive utilities. You can apply different styles for different screen sizes using intuitive and easy-to-remember class names.
+- **Performance**: By using Tailwind's purge option, you can remove unused CSS, resulting in a smaller final CSS bundle and faster load times.
+- **Developer Experience**: Tailwind provides a consistent and predictable way to apply styles, reducing the cognitive load on developers and increasing productivity. It also integrates seamlessly with tools like PostCSS and can be used in conjunction with other CSS frameworks if needed.
 
 ## Getting Started
 

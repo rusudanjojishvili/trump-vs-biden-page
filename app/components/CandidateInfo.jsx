@@ -7,9 +7,10 @@ const CandidateInfo = ({ candidate }) => {
   return (
     <>
     <InfoHeader title={candidate.title} />
-    <div className="flex flex-row mt-6 py-[30px] px-[130px]">
+    <div className="flex flex-row flex-wrap mt-6 py-[30px] px-[20px] lg:px-[130px]">
         <InfoSocial img={candidate?.social?.img} website={candidate?.social?.website} />
-        <InfoCampaign campainList={candidate.campainList} 
+        <InfoCampaign 
+        campainList={candidate.campainList} 
         about={candidate.about}
         name={candidate.name} 
         party={candidate.party}

@@ -7,9 +7,9 @@ const SentimentAnalysis = ({
   negativePosts
 }) => {
   return (
-    <div className='flex flex-row items-start my-[30px] mx-[130px] bg-grey-600 rounded-3xl
-    py-12 px-12'>
-       <div className='pr-36'>
+    <div className='flex flex-row flex-wrap md:flex-nowrap items-start my-[30px] mx-[20px] lg:mx-[130px] bg-grey-600 rounded-3xl
+    py-6 md:py-12 px-6 md:px-12'>
+       <div className='md:pr-5 mb-6 md:mb-0'>
             <div className='flex flex-row items-center pb-8'>
                 <Image 
                     src='/ph_smiley.svg'
@@ -17,7 +17,7 @@ const SentimentAnalysis = ({
                     width={48}
                     height={48}
                 />
-                <h1 className='text-5xl text-orange font-bold ml-3'>Sentiment Analysis</h1>
+                <h1 className='text-2x1 sm:text-3xl md:text-5xl text-orange font-bold ml-3'>Sentiment Analysis</h1>
             </div>
             <h1 >Webz.io sources and collects data from across the web and transforms it into machine-ready feeds that plug right into any platform. It deploys a wide array of crawlers that run in near real-time, drawing from millions of sources — covering everything from the biggest news sites, to obscure blogs and forums, all the way to the furthest reaches of the dark web.
             All stored in repositories, so machines consume live and historical data on demand. Webz.io gives machines data exactly the way they need it, so companies easily turn web data into customer value.</h1>

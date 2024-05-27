@@ -7,26 +7,28 @@ import Link from 'next/link'
 
 const InfoSocial = ({ img, website }) => {
   return (
-    <div className='flex-none w-50'>
-    <Image
-    className='rounded-lg'
-    src={img}
-    alt={img}
-    width={400}
-    height={400}
-    />
-   <div className="flex flex-col items-center justify-center py-5 mt-3 rounded-lg bg-grey-800 [&>*]:p-1">
-     <p>Campaign Website</p>      
-     <Link target="_blank" href={website} rel="noopener noreferrer">
-        <p className="text-orange">{website}</p>
-     </Link>
-     <p>Social Media</p>
-     <div className='flex flex-row items-center [&>*]:ml-1 [&>*]:fill-orange-500'>
-      <ImFacebook size={16}/>
-      <FaXTwitter size={16}/>
-      <IoLogoInstagram  size={18}/>
-      <TbBrandYoutubeFilled size={18}/>
-     </div>
+    <div className='w-[100%] sm:w-[40%]'>
+    <div>
+      <img
+      className='rounded-lg'
+      src={img}
+      alt={img}
+      // width={300}
+      // height={300}
+      />
+    <div className="flex flex-col items-center justify-center py-5 mt-3 rounded-lg bg-grey-800 [&>*]:p-1">
+      <p>Campaign Website</p>      
+      <Link target="_blank" href={website} rel="noopener noreferrer">
+          <p className="text-orange">{website}</p>
+      </Link>
+      <p>Social Media</p>
+      <div className='flex flex-row items-center [&>*]:ml-1 [&>*]:fill-orange-500'>
+        <ImFacebook size={16}/>
+        <FaXTwitter size={16}/>
+        <IoLogoInstagram  size={18}/>
+        <TbBrandYoutubeFilled size={18}/>
+      </div>
+   </div>
    </div>
 </div>
   )

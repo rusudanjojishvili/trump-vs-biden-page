@@ -3,22 +3,22 @@ import Image from 'next/image';
 
 const InfoCampaign = ({ name, party, about, campainList }) => {
   return (
-    <div className="ml-12">
-    <div className='flex-none w-50'>
+    <div className="ml-2 md:ml-12 w-full sm:w-[50%] ">
+    <div>
         <div className="pb-10 border-solid border-b border-grey-700">
-            <h1 className="text-3xl font-bold">{name}</h1>
-            <p>{party}</p>
+            <h1 className="text-3xl font-bold text-center sm:text-left">{name}</h1>
+            <p className="text-center sm:text-left">{party}</p>
         </div>
     </div>
-    <div className='flex-none w-50'>
+    <div >
         <div className="py-10 border-solid border-b border-grey-700">
-            <h1 className="text-2xl font-bold">About the Candidate</h1>
-            <p>{about}</p>
+            <h1 className="text-2xl font-bold text-center sm:text-left">About the Candidate</h1>
+            <p className="text-center sm:text-left mt-2">{about}</p>
         </div>
     </div>
-    <div className='flex-none w-50 '>
+    <div >
         <div className="py-10">
-            <h1 className="text-2xl font-bold">Campaign positions</h1>
+            <h1 className="text-2xl font-bold text-center sm:text-left">Campaign positions</h1>
             {campainList.map((position,i) => (
                 <div className="flex flex-row items-start mt-3" key={i}>
                     <Image 

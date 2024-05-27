@@ -2,7 +2,6 @@
 import {useState} from 'react'
 import Modal from "./Modal";
 import Card from './Card';
-import Link from 'next/link'
 
 export default function ModalContainer() {
 
@@ -17,9 +16,9 @@ export default function ModalContainer() {
       <Modal isOpen={isModalOpen} onClose={() => {
         setIsModalOpen(false)
       }}>
-      <div className='flex flex-col items-center py-6 px-7 max-h-[80vh] overflow-auto'>
-        <p className='text-black text-2xl mb-4'>Pick a Candidate to View Latest News</p>
-        <div className='flex flex-raw justify-center w-full'>
+      <div className='flex flex-col items-center py-6 px-2 lg:px-7 max-h-[80vh] overflow-auto'>
+        <p className='text-black text-sm md:text-2xl mb-4'>Pick a Candidate to View Latest News</p>
+        <div className='flex flex-row flex-wrap md:flex-nowrap justify-center w-full'>
           <Card src='./trump1.png' name='Donald Trump' party='The Republicans'
           candidateId='Trump'
           description='Donald John Trump was born on June 14, 1946, in Queens, New York City, to Fred and Mary Anne Trump. 

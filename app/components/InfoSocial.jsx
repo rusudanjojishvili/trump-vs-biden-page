@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { ImFacebook } from "react-icons/im";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io";

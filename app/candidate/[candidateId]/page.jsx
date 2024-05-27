@@ -1,15 +1,10 @@
-import ArticleItem from '@/app/components/ArticleItem'
 import ArticlesContainer from '@/app/components/ArticlesContainer'
 import BidenInfo from '@/app/components/BidenInfo'
-import CandidateInfo from '@/app/components/CandidateInfo'
-import PieChart from '@/app/components/PieChart'
 import SentimentAnalysis from '@/app/components/SentimentAnalysis'
 import TrumpInfo from '@/app/components/TrumpInfo'
 import Link from 'next/link'
 import React from 'react'
 import { IoIosArrowBack } from "react-icons/io";
-
-
 
 const page =  async ({
    params
